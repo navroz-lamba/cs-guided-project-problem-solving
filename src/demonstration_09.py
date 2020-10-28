@@ -13,7 +13,22 @@ Examples:
 - get_middle("middle") -> "dd"
 - get_middle("A") -> "A"
 """
-def get_middle(input_str):
-    # Your code here
+import math
+
+def is_even(input_string):
+    return input_string % 2 == 0
+
+def get_middle(input_string):
+    
+    if is_even(len(input_string)):
+        # we would want to slice to get multiple characters
+        midpoint = math.floor(len(input_string) / 2)
+        return input_string[midpoint-1 : midpoint+1]
+        
+    
+    else:
+        midpoint = math.floor(len(input_string) / 2)
+        return input_string[midpoint]
 
 
+print(get_middle("testing"))

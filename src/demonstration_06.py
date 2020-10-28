@@ -9,4 +9,14 @@ The input string will only consist of lower case letters and/or spaces.
 """
 def get_count(input_str):
     # Your code here
+    num_vowels = 0
+    vowels = ["a", "e", "i", "o", "u"]
 
+    for char in input_str:
+        if char in vowels:
+            num_vowels +=1
+    
+    return num_vowels
+
+
+print(get_count("where are you"))

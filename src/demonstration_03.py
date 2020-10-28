@@ -14,4 +14,4 @@ Notes:
 """
 def multiply_nums(nums):
     # Your code here
-
+    return [for value in nums]

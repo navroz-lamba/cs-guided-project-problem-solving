@@ -17,4 +17,7 @@ Notes:
 
 def add_indexes(numbers):
     # Your code here
+    return [(i+value) for i,value in enumerate(numbers)]
 
+
+print(add_indexes([1, 2, 3, 4, 5]))

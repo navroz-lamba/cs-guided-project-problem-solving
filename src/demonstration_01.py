@@ -17,4 +17,12 @@ Notes:
 
 def last(a, n):
     # Your code here
+    if len(a) < n:
+        return f""" "invalid" """
+
+    return a[len(a)-1 :]
+
+
+print(last([1, 2, 3, 4, 5], 6))
+
 
